@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.btnClickThis = new System.Windows.Forms.Button();
             this.lblHelloWorld = new System.Windows.Forms.Label();
             this.formsPlot1 = new ScottPlot.FormsPlot();
             this.plotButton = new System.Windows.Forms.Button();
             this.MousePositionLabel = new System.Windows.Forms.Label();
+            this.NewWindowButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClickThis
@@ -67,7 +69,7 @@
             // plotButton
             // 
             this.plotButton.ForeColor = System.Drawing.Color.Black;
-            this.plotButton.Location = new System.Drawing.Point(616, 305);
+            this.plotButton.Location = new System.Drawing.Point(591, 181);
             this.plotButton.Name = "plotButton";
             this.plotButton.Size = new System.Drawing.Size(75, 23);
             this.plotButton.TabIndex = 3;
@@ -84,19 +86,35 @@
             this.MousePositionLabel.TabIndex = 4;
             this.MousePositionLabel.Text = "No Mouse";
             // 
+            // NewWindowButton
+            // 
+            this.NewWindowButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NewWindowButton.BackgroundImage")));
+            this.NewWindowButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.NewWindowButton.Font = new System.Drawing.Font("Palace Script MT", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewWindowButton.Location = new System.Drawing.Point(591, 267);
+            this.NewWindowButton.Name = "NewWindowButton";
+            this.NewWindowButton.Size = new System.Drawing.Size(373, 117);
+            this.NewWindowButton.TabIndex = 5;
+            this.NewWindowButton.Text = "New Window";
+            this.NewWindowButton.UseVisualStyleBackColor = true;
+            this.NewWindowButton.Click += new System.EventHandler(this.NewWindowButton_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 516);
+            this.Controls.Add(this.NewWindowButton);
             this.Controls.Add(this.MousePositionLabel);
             this.Controls.Add(this.plotButton);
             this.Controls.Add(this.formsPlot1);
             this.Controls.Add(this.lblHelloWorld);
             this.Controls.Add(this.btnClickThis);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
-            this.Text = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.Text = "BLABLA";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,6 +127,7 @@
         private ScottPlot.FormsPlot formsPlot1;
         private System.Windows.Forms.Button plotButton;
         private System.Windows.Forms.Label MousePositionLabel;
+        private System.Windows.Forms.Button NewWindowButton;
     }
 }
 

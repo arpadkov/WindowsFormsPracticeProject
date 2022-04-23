@@ -46,5 +46,12 @@ namespace WindowsFormsPracticeProject
 
             formsPlot1.Refresh();
         }
+
+        private void NewWindowButton_Click(object sender, EventArgs e)
+        {
+            PopUpForm PopUp = new PopUpForm();
+            PopUp.FormBorderStyle = FormBorderStyle.None;
+            PopUp.Show();
+        }
     }
 }
